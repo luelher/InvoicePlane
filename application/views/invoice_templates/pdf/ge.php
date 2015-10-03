@@ -25,9 +25,15 @@
                 font-size: 11px;
             }
             .top-header{
-                padding-top: 100px;
+                padding-top: 140px;
             }
-
+            .invoice-id{
+                padding-top: -50px;
+                font-size: 24px;
+            }
+            .invoice-items{
+                padding-top: -20px;
+            }
         </style>
         
   </head>
@@ -36,7 +42,7 @@
             <table>
                 <tr>
                     <td style="width:70%">
-                        <div style="display: block; height: 2cm"></div>
+                        <div style="display: block; height: 1cm"></div>
 
                         <div class="invoice-to">
                             <p><b><?php echo lang('bill_to'); ?> </b>: <?php echo $invoice->client_name; ?></p>
@@ -81,8 +87,8 @@
             <table class="table table-striped" style="width: 100%;">
                 <thead>
                     <tr class="border-bottom-d">
-                        <th class="color-d"><?php echo lang('product_sku'); ?></th>
                         <th class="color-d"><?php echo lang('item_name'); ?></th>
+                        <th class="color-d"><?php echo lang('item_description'); ?></th>
                         <th class="text-right color-d"><?php echo lang('qty'); ?></th>
                         <th class="text-right color-d"><?php echo lang('price'); ?></th>
                         <th class="text-right color-d"><?php echo lang('total'); ?></th>
